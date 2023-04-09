@@ -23,6 +23,8 @@ public class DaikichiController {
 		return "Tomorrow, an oportunity will arise, so be sure to be open to new ideas!";
 	}
 	
+	
+	// paths with path variables
 	@RequestMapping("/travel/{city}")
 	public String travel(@PathVariable("city") String city) {
 		return String.format("Congradulations! You will soon travel to %s!", city);
